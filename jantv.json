@@ -1,6 +1,7 @@
 {
   "spider": "http://cdn.qiaoji8.com/fix250524.jar;md5;165bf6823d6a4e16f6cbc18f5bb16dce",
   "wallpaper": "https://bing.img.run/uhd.php",
+
   "lives": [
     {
       "group": "redirect",
@@ -13,18 +14,21 @@
         }
       ]
     },
+
+    /* >>> 新增 GitHub 直播源 <<< */
     {
       "group": "myIPTV",
       "channels": [
         {
-          "name": "myIPTV",
+          "name": "GitHub-IPv4",
           "urls": [
-            "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u"
+            "proxy://do=live&type=m3u&ext=https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u"
           ]
         }
       ]
     }
   ],
+
   "sites": [
     {"key":"天天","name":"天天┃高峰期用不了就点我换源或者搜索","type":3,"api":"csp_TTian","playerType":1,"ext":"7lj763gg09397919456493i0h44j8681highi4"},
     {"key":"csp_xlys","name":"修罗┃无搜索","type":3,"api":"csp_Bdys01","searchable":1,"playerType":1,"quickSearch":1,"filterable":0,"ext":"7lj763gg402i7942476492jlg94li29kk6gi8448ij"},
@@ -63,6 +67,7 @@
     {"key":"NoSearch_csp_BBB","name":"哔哩哔哩","type":3,"api":"csp_Bili","searchable":1,"quickSearch":0,"filterable":1,"ext":"7lj763gg402i7942463j9j9jg1558j9jl8g19213il86316k465719lik1585907179l13hj8h5j9j"},
     {"key":"push_agent","name":"推送","type":3,"api":"csp_PushAgent","searchable":0,"quickSearch":0,"filterable":0,"ext":"6666666666666666"}
   ],
+
   "parses": [
     {"name":"解析聚合","type":3,"url":"Demo"},
     {"name":"Json轮询","type":2,"url":"Sequence"},
@@ -70,11 +75,13 @@
     {"name":"巧技二","type":1,"url":"https://zy.qiaoji8.com/gouzi.php?url=","ext":{"flag":["qq","腾讯","qiyi","爱奇艺","奇艺","youku","优酷","sohu","搜狐","letv","乐视","mgtv","芒果","tnmb","seven","bilibili","1905","NetFilx"],"header":{"User-Agent":"okhttp/4.9.1"}}},
     {"name":"巧技三","type":1,"url":"https://zy.qiaoji8.com/xiafan.php?url=","ext":{"flag":["QD4K","iyf","duanju","gzcj","GTV","GZYS","weggz","Ace"],"header":{"User-Agent":"okhttp/4.9.1"}}}
   ],
+
   "flags": ["youku","qq","QQ","iqiyi","qiyi","letv","sohu","pptv","PPTV","mgtv","wasu","bilibili","m1905","seven","m78","mtv","sjs","dbs","yds"],
+
   "ijk": [
     {
-      "group":"软解码",
-      "options":[
+      "group": "软解码",
+      "options": [
         {"category":4,"name":"opensles","value":"0"},
         {"category":4,"name":"overlay-format","value":"842225234"},
         {"category":4,"name":"framedrop","value":"1"},
@@ -93,8 +100,8 @@
       ]
     },
     {
-      "group":"硬解码",
-      "options":[
+      "group": "硬解码",
+      "options": [
         {"category":4,"name":"opensles","value":"0"},
         {"category":4,"name":"overlay-format","value":"842225234"},
         {"category":4,"name":"framedrop","value":"1"},
