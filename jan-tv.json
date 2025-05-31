@@ -12,17 +12,6 @@
           ]
         }
       ]
-    },
-    {
-      "group": "myIPTV",
-      "channels": [
-        {
-          "name": "GitHub-IPv4",
-          "urls": [
-            "proxy://do=live&type=m3u&ext=https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u"
-          ]
-        }
-      ]
     }
   ],
   "sites": [
