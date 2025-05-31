@@ -12,6 +12,17 @@
           ]
         }
       ]
+    },
+    {
+      "group": "myIPTV",
+      "channels": [
+        {
+          "name": "myIPTV",
+          "urls": [
+            "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u"
+          ]
+        }
+      ]
     }
   ],
   "sites": [
